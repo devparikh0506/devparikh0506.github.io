@@ -1,3 +1,0 @@
-User-Agent: *
-
-Sitemap: devparikh0506.github.io/sitemap.xml
