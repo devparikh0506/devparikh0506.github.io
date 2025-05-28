@@ -114,41 +114,78 @@
   <body class="min-h-screen flex flex-col justify-between">
     <div id="particles-js"></div>
     <header
-      class="sticky z-50 top-0 shadow-md backdrop-blur-md text-zinc-300 py-4 px-10 flex flex-wrap items-center justify-between"
+      class="sticky z-50 top-0 shadow-md backdrop-blur-md text-zinc-300 py-4 px-6 flex items-center justify-between"
     >
+      <!-- Logo -->
       <div class="flex items-center space-x-4">
         <div class="flex flex-col items-start">
           <h1 class="text-2xl md:text-3xl font-bold tracking-wide text-white">
-            <a href="index.html"> DEV PARIKH </a>
+            <a href="index.html">DEV PARIKH</a>
           </h1>
           <div class="w-8 h-1 mt-1 bg-blue-400 rounded-full"></div>
         </div>
       </div>
-      <nav
-        class="flex flex-wrap items-center gap-4 text-sm md:text-base font-medium mt-2 md:mt-0"
+
+      <!-- Hamburger (Mobile Only) -->
+      <button
+        id="menu-btn"
+        class="md:hidden text-zinc-300 text-3xl focus:outline-none"
       >
+        &#9776;
+      </button>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex gap-6 text-base font-medium">
         <a
           href="index.html"
-          class="text-zinc-400 font-semibold nav-link relative"
+          class="nav-link text-zinc-300 font-semibold hover:text-blue-400"
           >Home</a
         >
-        <a
-          href="about.html"
-          class="text-blue-300 nav-link relative hover:text-blue-400 active"
-          >About</a
-        >
-        <a
-          href="projects.html"
-          class="text-zinc-300 nav-link relative hover:text-blue-400"
+        <a href="about.html" class="nav-link text-blue-400 hover:text-blue-400 active">About</a>
+        <a href="projects.html" class="nav-link text-zinc-300 hover:text-blue-400"
           >Projects</a
         >
-        <a
-          href="contact.html"
-          class="text-zinc-300 nav-link relative hover:text-blue-400"
+        <a href="contact.html" class="nav-link text-zinc-300 hover:text-blue-400"
           >Contact</a
         >
       </nav>
     </header>
+
+    <!-- SIDEBAR + OVERLAY (Place outside <header>) -->
+    <!-- Sidebar Overlay -->
+<div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+
+<!-- Sidebar -->
+<div
+  id="sidebar"
+  class="fixed top-0 left-0 w-64 h-full bg-zinc-900 z-50 p-6 transform -translate-x-full transition-transform duration-300 md:hidden flex flex-col"
+>
+  <!-- Back Button -->
+  <div class="flex items-center justify-between mb-6">
+    <div class="flex items-center space-x-4">
+        <div class="flex flex-col items-start">
+          <h1 class="text-2xl md:text-3xl font-bold tracking-wide text-white">
+            <a href="index.html">DEV PARIKH</a>
+          </h1>
+          <div class="w-8 h-1 mt-1 bg-blue-400 rounded-full"></div>
+        </div>
+      </div>
+    <button
+      id="close-sidebar"
+      class="text-zinc-400 text-2xl font-bold hover:text-blue-400 focus:outline-none"
+    >
+      &times;
+    </button>
+  </div>
+
+  <!-- Nav Links -->
+  <nav class="mt-6 flex flex-col gap-6 text-lg font-medium">
+    <a href="index.html" class="text-zinc-300 hover:text-blue-400">Home</a>
+    <a href="about.html" class="text-blue-300 hover:text-blue-400">About</a>
+    <a href="projects.html" class="text-zinc-300 hover:text-blue-400">Projects</a>
+    <a href="contact.html" class="text-zinc-300 hover:text-blue-400">Contact</a>
+  </nav>
+</div>
     <main>
       <section id="summary" class="py-20 px-6 sm:px-10 lg:px-20 bg-transparent">
         <div
@@ -1156,7 +1193,7 @@
     </main>
 
     <footer
-      class="relative z-50 bg-blue-500/25 backdrop-blur-xl text-zinc-400 py-10 px-6"
+      class="relative bg-blue-500/25 backdrop-blur-xl text-zinc-400 py-10 px-6"
     >
       <div
         class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left"
