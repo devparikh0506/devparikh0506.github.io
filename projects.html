@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 – Page Not Found</title>
-    <link rel="icon"  type="image/x-icon" href="/favicon.ico" />
+    <title>Key Projects | Dev Parikh</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta
       name="description"
-      content="Welcome to Dev Parikh's portfolio. Discover work in AI, Brain-Computer Interfaces, and Full-Stack Development."
+      content="Check out Dev's featured projects including EEG Emotion Detection, LangChain Chatbot, and Volz UA Platform."
     />
-    <meta
-      property="og:title"
-      content="Dev Parikh | Software & AI/ML Engineer"
-    />
+    <meta property="og:title" content="Key Projects – Dev Parikh" />
     <meta
       property="og:description"
-      content="Explore cutting-edge projects and research in AI, BCI, and software engineering by Dev Parikh."
+      content="AI and software projects solving real-world challenges with LLMs, BCI, and full-stack tech."
     />
-    <meta property="og:url" content="https://devparikh0506.github.io/" />
+    <meta
+      property="og:url"
+      content="https://devparikh0506.github.io/projects"
+    />
     <meta
       property="og:image"
-      content="https://devparikh.vercel.app/og?title=Dev%20Parikh%27s%20Portfolio"
+      content="https://devparikh.vercel.app/og?title=Key%20Projects"
     />
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -110,7 +110,6 @@
       });
     </script>
   </head>
-
   <body class="min-h-screen flex flex-col justify-between">
     <div id="particles-js"></div>
     <header
@@ -129,7 +128,7 @@
       >
         <a
           href="index.html"
-          class="text-blue-400 font-semibold nav-link relative active"
+          class="text-zinc-400 font-semibold nav-link relative"
           >Home</a
         >
         <a
@@ -139,7 +138,7 @@
         >
         <a
           href="projects.html"
-          class="text-zinc-300 nav-link relative hover:text-blue-400"
+          class="text-blue-300 nav-link relative hover:text-blue-400 active"
           >Projects</a
         >
         <a
@@ -150,18 +149,57 @@
       </nav>
     </header>
     <main>
-      <div class="text-center space-y-6">
-        <h1 class="text-6xl font-extrabold text-blue-400">404</h1>
-        <p class="text-xl text-gray-300">
-          Oops! The page you're looking for doesn’t exist.
-        </p>
-        <a
-          href="index.html"
-          class="inline-block px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
-          >Go Home</a
-        >
-      </div>
+      <section class="py-24 px-6 text-white">
+        <h2 class="text-4xl font-bold text-center mb-12">🧠 All Projects</h2>
+
+        <!-- Filter Tags -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+          <button
+            data-category="all"
+            class="filter-btn active px-4 py-2 bg-blue-600 hover:bg-blue-700 transition rounded-lg text-sm font-medium cursor-pointer"
+          >
+            All
+          </button>
+          <button
+            data-category="ai"
+            class="filter-btn px-4 py-2 bg-zinc-800 hover:bg-blue-600 transition rounded-lg text-sm font-medium cursor-pointer"
+          >
+            AI & ML
+          </button>
+          <button
+            data-category="web"
+            class="filter-btn px-4 py-2 bg-zinc-800 hover:bg-blue-600 transition rounded-lg text-sm font-medium cursor-pointer"
+          >
+            Web
+          </button>
+          <button
+            data-category="data_anlaysis"
+            class="filter-btn px-4 py-2 bg-zinc-800 hover:bg-blue-600 transition rounded-lg text-sm font-medium cursor-pointer"
+          >
+            Data Analysis
+          </button>
+          <button
+            data-category="cv"
+            class="filter-btn px-4 py-2 bg-zinc-800 hover:bg-blue-600 transition rounded-lg text-sm font-medium cursor-pointer"
+          >
+            Computer Vision
+          </button>
+          <button
+            data-category="nlp"
+            class="filter-btn px-4 py-2 bg-zinc-800 hover:bg-blue-600 transition rounded-lg text-sm font-medium cursor-pointer"
+          >
+            NLP
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div
+          id="project-grid"
+          class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+        ></div>
+      </section>
     </main>
+
     <footer
       class="relative z-50 bg-blue-500/25 backdrop-blur-xl text-zinc-400 py-10 px-6"
     >
@@ -230,4 +268,29 @@
     <script src="scripts/vendor/particles.min.js"></script>
     <script src="scripts/main.min.js"></script>
   </body>
+  <style>
+    .filter-btn.active {
+      background-color: #2563eb !important;
+      color: white;
+    }
+
+    .filter-btn {
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .filter-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    a {
+      cursor: pointer;
+      transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    }
+
+    a:hover {
+      color: #93c5fd;
+      transform: translateY(-1px);
+    }
+  </style>
 </html>
