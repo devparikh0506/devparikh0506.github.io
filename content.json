@@ -1,0 +1,407 @@
+{
+  "personal": {
+    "name": "Dev Parikh",
+    "title": "Software & AI/ML Engineer",
+    "role": "Machine Learning Software Engineer",
+    "avatar": "assets/avatar.png",
+    "email": "dev.dpparikh@gmail.com",
+    "phone": "+1 (667) 433-9710",
+    "phoneDisplay": "667-433-9710",
+    "location": "Baltimore, MD (Open to relocation)",
+    "github": "https://github.com/devparikh0506",
+    "linkedin": "https://www.linkedin.com/in/devparikh0506",
+    "website": "https://devparikh0506.github.io",
+    "resumeView": "https://drive.google.com/file/d/1FJ8Uu4NPTxvwX5I_-b2nZ-yh5RJevJ_o/view",
+    "resumeDownload": "https://drive.google.com/uc?export=download&id=1FJ8Uu4NPTxvwX5I_-b2nZ-yh5RJevJ_o"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "typedStrings": [
+      "Machine Learning Software Engineer",
+      "GenAI Developer",
+      "Full-Stack Developer",
+      "Robotics & AI Researcher"
+    ],
+    "bio": "I'm a <span class=\"text-blue-400 font-semibold\">Machine Learning Software Engineer</span> with 4+ years delivering production-grade ML systems, <span class=\"text-blue-400\">full-stack applications</span>, and cloud-native solutions. Skilled in <span class=\"text-blue-400\">GenAI (LLMs, RAG, LangChain)</span>, <span class=\"text-blue-400\">software development (React, Node.js, Python)</span>, <span class=\"text-blue-400\">robotics (Kinova Gen3)</span>, and <span class=\"text-blue-400\">MLOps (AWS, Docker, CI/CD)</span>. Published researcher bridging AI and software engineering."
+  },
+  "about": {
+    "summary": "Software Engineer with 4+ years of experience delivering scalable machine learning systems, AI-driven automation, and cloud-native applications. Proven success developing Anthropic LLM-powered autonomous systems and GenAI tools on AWS Bedrock, reducing manual effort by up to 40%. Skilled in full-stack development with React, Next.js, and Node.js, coupled with expertise in PyTorch, Spark, and MLOps platforms including SageMaker and MLflow. Experienced in building CI/CD pipelines using AWS Lambda and Docker to accelerate deployments by 50%. Strong foundation in AI integration with robotics through advanced deep learning research, achieving production-ready ML systems with high accuracy."
+  },
+  "availability": "Currently employed as a Machine Learning Software Engineer at VITG Corp. Open to discussing exciting opportunities in Machine Learning Engineering, GenAI Development, or Full-Stack AI roles. Available for consulting, research collaborations, and interesting projects. Open to relocation within the United States.",
+  "education": [
+    {
+      "degree": "Master of Science in Data Science",
+      "institution": "University of Maryland, Baltimore County",
+      "location": "Maryland, USA",
+      "duration": "Jan 2024 – Dec 2025",
+      "gpa": "3.75 / 4.00",
+      "coursework": "Machine Learning, Data Analysis, Data Engineering, Deep Learning, Natural Language Processing"
+    },
+    {
+      "degree": "Bachelor of Engineering in Computer Engineering",
+      "institution": "Gujarat Technological University",
+      "location": "Gujarat, India",
+      "duration": "Jun 2019 – May 2023",
+      "gpa": "3.5 / 4.00",
+      "coursework": "Data Structures & Algorithms, Database Systems, Object-Oriented Programming, Web Development"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Machine Learning Software Engineer",
+      "company": "VITG Corp",
+      "location": "Baltimore, MD",
+      "duration": "Aug 2025 – Present",
+      "responsibilities": [
+        "Developed an Anthropic Claude LLM-based autonomous system through AWS Bedrock to perform multi-step reasoning on pull requests, integrating outputs from Checkov and Semgrep to identify configuration and permission risks.",
+        "Gained experience with AWS Lambda, API Gateway, Terraform and VPC to enable event-driven ML validation pipelines that reduce manual code review effort and strengthen compliance across deployments."
+      ],
+      "responsibilitiesMobile": [
+        "Developed Anthropic Claude LLM-based autonomous system on AWS Bedrock for PR analysis.",
+        "Built event-driven ML validation pipelines with AWS Lambda, API Gateway, and Terraform."
+      ]
+    },
+    {
+      "title": "Machine Learning & Robotics Graduate Researcher",
+      "company": "UMBC (Vinjamuri Lab)",
+      "location": "Baltimore, MD",
+      "duration": "Oct 2024 – Present",
+      "responsibilities": [
+        "Improving deep learning models in PyTorch (CUDA) for EEG-based motor imagery classification and exposing trained models as modular REST APIs to support robotics integration and real-time inference.",
+        "Building scalable simulation and data pipelines in Isaac Sim with OpenCV-based vision modules, ensuring robust backend workflows for multimodal ML experiments.",
+        "Engineered and published a multimodal ML system (EEG + facial features) that achieved 98% accuracy, demonstrating applied ML research translated into production-ready AI services (published in IEEE Access, 2024)."
+      ],
+      "responsibilitiesMobile": [
+        "Built PyTorch (CUDA) models for EEG motor imagery with REST API integration.",
+        "Developed Isaac Sim pipelines with OpenCV for multimodal ML experiments.",
+        "Published multimodal ML system achieving 98% accuracy in IEEE Access 2024."
+      ]
+    },
+    {
+      "title": "Sr. Machine Learning Software Engineer",
+      "company": "Codage Habitation",
+      "location": "Ahmedabad, India",
+      "duration": "Nov 2021 – Jan 2024",
+      "responsibilities": [
+        "Led development of 10+ Anthropic LLM-powered Retrieval-Augmented Generation (RAG) chatbots, automating user query resolution with zero human intervention and improving content accessibility by 35%.",
+        "Spearheaded creation of GenAI-driven automation tools leveraging LangChain and Anthropic/OpenAI models on AWS Bedrock, streamlining content generation workflows and cutting manual effort by 40%.",
+        "Solely managed 10+ CI/CD pipelines using AWS, Docker, and GitHub Actions that accelerated deployment frequency by 50%.",
+        "Architected and launched 20+ real-time dashboards using React, Node.js, Chart.js, and ApexCharts, increasing cross-departmental KPI visibility and data-driven decision making.",
+        "Designed backend architecture for 50+ microservices with optimized database indexing in PostgreSQL, halving query latency and improving system responsiveness.",
+        "Delivered 10+ high-performance web applications with Next.js SSR/SSG, boosting page load speeds by 40% and enhancing user experience.",
+        "Led a team of 5+ engineers to design and deploy the GenAI-Powered Customer Support Agent using Claude sonnet 3.0, LangChain, and AWS Bedrock, improving customer support efficiency by 35%."
+      ],
+      "responsibilitiesMobile": [
+        "Led 10+ Anthropic RAG chatbot projects, automating queries with 35% efficiency gain.",
+        "Built GenAI automation tools with LangChain on AWS Bedrock, reducing manual effort by 40%.",
+        "Managed 10+ CI/CD pipelines with Docker and GitHub Actions, accelerating deployments by 50%.",
+        "Architected 20+ real-time dashboards and 50+ microservices with optimized PostgreSQL."
+      ]
+    }
+  ],
+  "skills": {
+    "Machine Learning & AI": [
+      { "name": "PyTorch", "icon": "devicon-pytorch-original" },
+      { "name": "TensorFlow", "icon": "devicon-tensorflow-original" },
+      { "name": "Keras", "icon": "devicon-keras-original" },
+      { "name": "Transformers", "icon": "" },
+      { "name": "Hugging Face", "icon": "" },
+      { "name": "OpenCV", "icon": "devicon-opencv-original" },
+      { "name": "EEG & BCI Modeling", "icon": "" }
+    ],
+    "Web Development": [
+      { "name": "React", "icon": "devicon-react-original" },
+      { "name": "Next.js", "icon": "devicon-nextjs-original" },
+      { "name": "Node.js", "icon": "devicon-nodejs-plain" },
+      { "name": "Django", "icon": "devicon-django-plain" },
+      { "name": "Flask", "icon": "" },
+      { "name": "JWT Auth", "icon": "" }
+    ],
+    "Big Data & Cloud": [
+      { "name": "AWS (EC2, S3, Lambda, Glue)", "icon": "devicon-amazonwebservices-original" },
+      { "name": "PySpark", "icon": "devicon-apachespark-original" },
+      { "name": "Hadoop", "icon": "devicon-hadoop-plain" },
+      { "name": "ETL Pipelines", "icon": "" },
+      { "name": "Data Lakes", "icon": "" }
+    ],
+    "Programming Languages": [
+      { "name": "Python", "icon": "devicon-python-plain" },
+      { "name": "JavaScript", "icon": "devicon-javascript-plain" },
+      { "name": "C++", "icon": "devicon-cplusplus-plain" },
+      { "name": "SQL", "icon": "devicon-mysql-plain" }
+    ],
+    "DevOps & CI/CD": [
+      { "name": "Git", "icon": "devicon-git-plain" },
+      { "name": "GitHub Actions", "icon": "devicon-github-original" },
+      { "name": "Docker", "icon": "devicon-docker-plain" },
+      { "name": "CI/CD Pipelines", "icon": "" },
+      { "name": "DigitalOcean", "icon": "devicon-digitalocean-plain" }
+    ],
+    "Data & Visualization": [
+      { "name": "MySQL", "icon": "devicon-mysql-plain" },
+      { "name": "MongoDB", "icon": "devicon-mongodb-plain" },
+      { "name": "Firebase", "icon": "devicon-firebase-plain" },
+      { "name": "Tableau", "icon": "" },
+      { "name": "Power BI", "icon": "" }
+    ]
+  },
+  "coreExpertise": [
+    {
+      "title": "Robotics & Computer Vision",
+      "icon": "fas fa-robot",
+      "color": "purple-400",
+      "items": [
+        "Unitree G1 Humanoid Robot, Kinova Gen3 Arm",
+        "Isaac Sim, ROS, OpenCV, YOLOv8",
+        "Human-Robot Interaction",
+        "Brain-Computer Interface (Motor Imagery)"
+      ]
+    },
+    {
+      "title": "AI & Machine Learning",
+      "icon": "fas fa-brain",
+      "color": "blue-400",
+      "items": [
+        "GenAI (LLMs, RAG, LangChain, Prompt Engineering)",
+        "Deep Learning (CNN, RNN, LSTM, PyTorch)",
+        "Reinforcement Learning (DQN)",
+        "Signal Processing, Time-Series Analysis"
+      ]
+    },
+    {
+      "title": "Software & APIs",
+      "icon": "fas fa-code",
+      "color": "yellow-400",
+      "items": [
+        "REST APIs, GraphQL, Microservices",
+        "React, Node.js, TypeScript, JavaScript",
+        "Java, Redux"
+      ]
+    },
+    {
+      "title": "MLOps & Cloud",
+      "icon": "fas fa-cloud",
+      "color": "cyan-400",
+      "items": [
+        "AWS (SageMaker, Bedrock, EC2, Lambda, S3)",
+        "MLflow, Docker, Jenkins, GitHub Actions",
+        "CI/CD, PySpark, Hadoop, Spark, Kafka"
+      ]
+    },
+    {
+      "title": "Databases",
+      "icon": "fas fa-database",
+      "color": "green-400",
+      "items": [
+        "SQL, MySQL, PostgreSQL",
+        "MongoDB, DynamoDB",
+        "Firebase"
+      ]
+    },
+    {
+      "title": "Tools & Collaboration",
+      "icon": "fas fa-tools",
+      "color": "pink-400",
+      "items": [
+        "Git, Linux, Bash",
+        "Terraform, Jira",
+        "Agile, Scrum"
+      ]
+    }
+  ],
+  "featuredProjects": [
+    {
+      "title": "GenAI Customer Support Agent",
+      "image": "assets/projects/travel_mitra.png",
+      "description": "RAG chatbot using Claude sonnet 3.0, LangChain, and AWS Bedrock. Reduced response time by 35%.",
+      "detailedDescription": "Led a team of 5+ engineers to design and deploy an enterprise-grade retrieval-augmented generation (RAG) chatbot powered by Anthropic Claude sonnet 3.0. Integrated LangChain for orchestration and AWS Bedrock for scalable inference. Built with Next.js frontend and Python backend. Achieved 35% reduction in average response time and 25% increase in first-contact resolution rate, significantly improving customer satisfaction scores.",
+      "icons": ["fas fa-robot", "fab fa-aws", "fab fa-react"],
+      "iconColor": "blue-400",
+      "link": "https://github.com/devparikh0506/travel_mitra",
+      "linkType": "github"
+    },
+    {
+      "title": "Motor Imagery Robotic Control",
+      "image": "assets/projects/emotion.png",
+      "description": "CNN-based EEG classification for Kinova Gen3 arm control with 70% accuracy.",
+      "detailedDescription": "Built CNN-based motor imagery classification models in PyTorch with CUDA acceleration to decode EEG signals for controlling the Kinova Gen3 robotic arm. Achieved 70% classification accuracy across multiple motor imagery tasks. Simulated robotic movements in NVIDIA Isaac Sim to train and validate real-time arm control pipelines. This research advances applications in prosthetic assistance, rehabilitation robotics, and EEG-driven automation systems.",
+      "icons": ["fas fa-robot", "fas fa-brain", "fab fa-python"],
+      "iconColor": "purple-400",
+      "link": "#",
+      "linkType": "github"
+    },
+    {
+      "title": "BibleProject Platform Backend",
+      "image": "assets/projects/bible.png",
+      "description": "Scalable backend with Django, Next.js, microservices, and AWS S3.",
+      "detailedDescription": "Built a highly scalable backend infrastructure using Django REST framework and Next.js with a microservices architecture. Implemented secure media handling and content delivery via AWS S3 with CloudFront CDN. Containerized all services with Docker for consistent deployment across environments. Automated deployments through comprehensive CI/CD pipelines using GitHub Actions, improving release reliability by 40% and reducing deployment time by 60%.",
+      "icons": ["fab fa-python", "fab fa-react", "fab fa-docker"],
+      "iconColor": "green-400",
+      "link": "https://www.bibleproject.com",
+      "linkType": "website"
+    }
+  ],
+  "projects": [
+    {
+      "title": "GenAI-Powered Customer Support Agent",
+      "image": "assets/projects/travel_mitra.png",
+      "description": "RAG chatbot using Claude sonnet 3.0, LangChain, Next.js and AWS Bedrock. Reduced response time by 35%.",
+      "detailedDescription": "<strong>Tech Stack:</strong> Anthropic Claude sonnet 3.0, LangChain, RAG, AWS Bedrock, Next.js, Python<br><br><strong>Overview:</strong> Led a team of 5+ engineers to design and deploy an enterprise-grade retrieval-augmented generation (RAG) chatbot. The system uses Anthropic Claude sonnet 3.0 for natural language understanding and LangChain for orchestration of complex multi-step conversations.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>Real-time document retrieval using vector embeddings</li><li>Context-aware responses with conversation memory</li><li>Scalable inference via AWS Bedrock</li><li>Modern React/Next.js interface</li></ul><br><strong>Impact:</strong> Reduced average response time by 35% and increased first-contact resolution rate by 25%, driving higher customer satisfaction.",
+      "link": "https://github.com/devparikh0506/travel_mitra",
+      "tags": ["ai", "web", "nlp"],
+      "icons": ["fas fa-robot", "fab fa-aws", "fab fa-react"]
+    },
+    {
+      "title": "BibleProject Platform Backend",
+      "image": "assets/projects/bible.png",
+      "description": "Scalable backend using Django and Next.js with microservices architecture and AWS S3.",
+      "detailedDescription": "<strong>Tech Stack:</strong> Django, Next.js, Microservices, Docker, PostgreSQL, AWS S3<br><br><strong>Overview:</strong> Built a highly scalable backend infrastructure for a large-scale educational platform serving thousands of users. Implemented microservices architecture for modularity and independent scaling.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>RESTful API design with Django REST framework</li><li>Secure media handling via AWS S3 with CloudFront CDN</li><li>Docker containerization for all services</li><li>PostgreSQL with optimized indexing</li><li>CI/CD pipelines with GitHub Actions</li></ul><br><strong>Impact:</strong> Improved release reliability by 40% and reduced deployment time by 60%.",
+      "link": "https://www.bibleproject.com",
+      "tags": ["web"],
+      "icons": ["fab fa-python", "fab fa-react", "fab fa-docker"]
+    },
+    {
+      "title": "Motor Imagery Robotic Control",
+      "image": "assets/projects/emotion.png",
+      "description": "CNN-based motor imagery classification for Kinova Gen3 robotic arm control with 70% accuracy.",
+      "detailedDescription": "<strong>Tech Stack:</strong> Python, PyTorch (CUDA), CNN, Signal Processing, Kinova Gen3, Isaac Sim, OpenCV<br><br><strong>Overview:</strong> Developed a brain-computer interface system that decodes motor imagery EEG signals to control a Kinova Gen3 robotic arm in real-time. Used CNN architectures optimized with CUDA for low-latency inference.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>Real-time EEG signal processing and classification</li><li>CNN models trained on motor imagery tasks</li><li>NVIDIA Isaac Sim for robotic simulation</li><li>REST API for model inference</li><li>70% classification accuracy across multiple tasks</li></ul><br><strong>Applications:</strong> Prosthetic assistance, rehabilitation robotics, and EEG-driven automation.",
+      "link": "#",
+      "tags": ["ai", "robotics"],
+      "icons": ["fas fa-robot", "fas fa-brain", "fab fa-python"]
+    },
+    {
+      "title": "EEG Emotion Detection",
+      "image": "assets/projects/emotion.png",
+      "description": "Deep-RNN model detecting emotions from DEAP EEG signals with ~62% accuracy.",
+      "detailedDescription": "<strong>Tech Stack:</strong> Python, PyTorch, CNN, RNN, Deep-RNN, DEAP Dataset<br><br><strong>Overview:</strong> Built an AI model using deep recurrent neural networks to detect human emotions (high/low valence and arousal) from physiological EEG signals in the DEAP dataset.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>Data preprocessing and signal augmentation</li><li>Deep-RNN architecture for temporal modeling</li><li>Multi-class emotion classification</li><li>~62% accuracy on challenging emotion recognition task</li></ul><br><strong>Applications:</strong> Human-computer interaction, affective computing, mental health monitoring.",
+      "link": "https://github.com/devparikh0506/EEG_Emotion_Detection?tab=readme-ov-file#emotion-detection-using-deap-dataset",
+      "tags": ["ai"],
+      "icons": ["fas fa-brain", "fas fa-wave-square", "fab fa-python"]
+    },
+    {
+      "title": "Cancer Detection using CNN",
+      "image": "assets/projects/cancer.png",
+      "description": "CNN model for histopathology image classification using Kaggle dataset.",
+      "detailedDescription": "<strong>Tech Stack:</strong> Python, PyTorch, CNN, Transfer Learning, Kaggle Dataset<br><br><strong>Overview:</strong> Developed a convolutional neural network for automated cancer detection from histopathology images. Used transfer learning with pre-trained models and fine-tuned on medical imaging data.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>Image preprocessing and augmentation</li><li>CNN architecture with batch normalization</li><li>Transfer learning from ImageNet</li><li>Binary classification (benign/malignant)</li><li>Model evaluation with confusion matrix and ROC curves</li></ul><br><strong>Impact:</strong> Demonstrates potential for AI-assisted medical diagnosis.",
+      "link": "https://github.com/devparikh0506/DATA_690_Deep_Learning/blob/main/project_2/cancer_detection_using_cnn.ipynb",
+      "tags": ["ai"],
+      "icons": ["fas fa-dna", "fas fa-microscope", "fab fa-python"]
+    },
+    {
+      "title": "Real-Time Face Detection",
+      "image": "assets/projects/facedetect.png",
+      "description": "Face detection system using OpenCV Haar Cascades and webcam feed.",
+      "detailedDescription": "<strong>Tech Stack:</strong> Python, OpenCV, Haar Cascades, NumPy<br><br><strong>Overview:</strong> Built a real-time face detection system using OpenCV's Haar Cascade classifiers with live webcam feed processing. Optimized for low-latency detection with high accuracy.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>Real-time video stream processing</li><li>Multi-face detection in single frame</li><li>Bounding box visualization</li><li>FPS optimization for smooth performance</li><li>Cross-platform compatibility</li></ul><br><strong>Applications:</strong> Security systems, attendance tracking, human-computer interaction.",
+      "link": "https://github.com/devparikh0506/face-detection?tab=readme-ov-file#real-time-face-detection",
+      "tags": ["ai", "cv"],
+      "icons": ["fas fa-video", "fas fa-eye", "fab fa-python"]
+    },
+    {
+      "title": "Soccer Player Valuation",
+      "image": "assets/projects/soccer.png",
+      "description": "ML model predicting transfer values using ensemble and neural models.",
+      "detailedDescription": "<strong>Tech Stack:</strong> Python, Scikit-learn, Neural Networks, Ensemble Methods<br><br><strong>Overview:</strong> Predicted soccer player transfer values using machine learning, reducing forecast error by 37.4% (R-squared improvement). Combined ensemble methods with neural networks for robust predictions.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>Feature engineering from player statistics</li><li>Feedforward Neural Network optimized by SGD</li><li>Ensemble methods (Random Forest, Gradient Boosting)</li><li>99.95% accuracy with 15% reduction in training time</li><li>Model comparison and evaluation</li></ul><br><strong>Impact:</strong> Demonstrates ML applications in sports analytics and financial forecasting.",
+      "link": "https://github.com/devparikh0506/soccer_master?tab=readme-ov-file#soccer-master-project",
+      "tags": ["ai"],
+      "icons": ["fab fa-python", "fas fa-brain"]
+    },
+    {
+      "title": "Volz Website",
+      "image": "assets/projects/volz.png",
+      "description": "Corporate site built with Gatsby frontend and Sanity backend CMS.",
+      "detailedDescription": "<strong>Tech Stack:</strong> Gatsby.js, React, Sanity CMS, GraphQL, Groq<br><br><strong>Overview:</strong> Developed a modern corporate website for a Ukrainian telecom company using Gatsby for blazing-fast performance and Sanity as a headless CMS for content management.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>Static site generation with Gatsby for optimal performance</li><li>Sanity CMS for real-time content updates</li><li>GraphQL and Groq queries for data fetching</li><li>Responsive design with modern UI/UX</li><li>SEO optimization and PWA capabilities</li></ul><br><strong>Impact:</strong> Delivered a high-performance, easily maintainable corporate web presence.",
+      "link": "https://volz.ua",
+      "tags": ["web"],
+      "icons": ["fab fa-react", "fas fa-database"]
+    },
+    {
+      "title": "UAS Risk Analysis",
+      "description": "Big data risk profiling for unmanned aerial systems using FAA and OpenSky data.",
+      "detailedDescription": "<strong>Tech Stack:</strong> PySpark, AWS Glue, Hadoop, Python, Shapefiles<br><br><strong>Overview:</strong> Analyzed 100+ GB of unmanned aircraft system (UAS) and FAA data using distributed computing to identify high-risk zones and flight patterns.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>Big data processing with PySpark and AWS Glue</li><li>Hadoop distributed file system for data storage</li><li>Geospatial analysis with shapefiles</li><li>Risk zone identification with 95% accuracy</li><li>Visualization of risk patterns with 90% confidence</li></ul><br><strong>Impact:</strong> Provides insights for aviation safety and airspace management.",
+      "image": "assets/projects/uas.png",
+      "tags": ["data_anlaysis"],
+      "icons": ["fab fa-aws", "fas fa-cloud", "fab fa-python"],
+      "link": "https://github.com/devparikh0506/uas-risk-analysis"
+    },
+    {
+      "title": "LAPD Crime Analysis",
+      "description": "Analyzed trends and hotspots using crime datasets for public safety insights.",
+      "detailedDescription": "<strong>Tech Stack:</strong> Python, Pandas, Matplotlib, Seaborn, Jupyter<br><br><strong>Overview:</strong> Performed comprehensive exploratory data analysis on Los Angeles Police Department crime datasets to identify trends, hotspots, and patterns for public safety insights.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>Time-series analysis of crime trends</li><li>Geospatial visualization of crime hotspots</li><li>Statistical analysis of crime categories</li><li>Interactive visualizations with Matplotlib/Seaborn</li><li>Data cleaning and preprocessing</li></ul><br><strong>Impact:</strong> Provides actionable insights for law enforcement resource allocation.",
+      "image": "assets/projects/lapd.png",
+      "tags": ["data_anlaysis"],
+      "icons": ["fas fa-map-marker-alt", "fas fa-chart-line", "fab fa-python"],
+      "link": "https://github.com/devparikh0506/DATA-601/blob/main/project-1/crime/crime-eda.ipynb"
+    },
+    {
+      "title": "Airline Performance Analysis",
+      "description": "Exploratory and predictive analysis of delays, routes, and airline performance.",
+      "detailedDescription": "<strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Matplotlib, Statistical Analysis<br><br><strong>Overview:</strong> Conducted exploratory and predictive analysis on airline performance data to understand delay patterns, route efficiency, and operational metrics.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>Delay prediction using regression models</li><li>Route performance comparison</li><li>Seasonal trend analysis</li><li>Carrier performance benchmarking</li><li>Interactive dashboards for insights</li></ul><br><strong>Impact:</strong> Helps airlines optimize operations and improve on-time performance.",
+      "image": "assets/projects/airline.png",
+      "tags": ["data_anlaysis"],
+      "icons": ["fas fa-plane", "fas fa-database", "fab fa-python"],
+      "link": "https://github.com/devparikh0506/DATA-601/blob/main/final-project/601_Final_Project.ipynb"
+    },
+    {
+      "title": "E Learning Platform",
+      "description": "Built a full-stack educational app with student dashboards, video content, and assessments.",
+      "detailedDescription": "<strong>Tech Stack:</strong> Next.js, React, Node.js, MongoDB, Video Streaming<br><br><strong>Overview:</strong> Constructed a scalable E-Learning platform facilitating performance tracking for 10,000+ students with real-time progress visualization and interactive content delivery.<br><br><strong>Key Features:</strong><ul class='list-disc ml-4 mt-2 space-y-1'><li>Student dashboards with progress tracking</li><li>Video content management and streaming</li><li>Assessment and quiz system</li><li>Real-time analytics and reporting</li><li>Responsive design for mobile learning</li></ul><br><strong>Impact:</strong> Enables scalable online education with comprehensive student tracking.",
+      "image": "assets/projects/elearning.png",
+      "tags": ["web", "ai"],
+      "icons": ["fab fa-react", "fab fa-node", "fas fa-chalkboard-teacher"],
+      "link": "https://www.futuresavvy.co.uk"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Deep Fusion of Neurophysiological and Facial Features for Enhanced Emotion Detection",
+      "authors": "Safavi F., Parikh D. et al.",
+      "venue": "IEEE Access, vol. 13, pp. 67434–67445, 2025",
+      "doi": "https://doi.org/10.1109/ACCESS.2025.3555934",
+      "description": "Developed a multimodal transformer integrating EEG and facial data, achieving near state-of-the-art accuracy."
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Software Engineer Certification",
+      "organization": "HackerRank",
+      "link": "https://www.hackerrank.com/certificates/",
+      "description": "Achieved Software Engineer certification from HackerRank"
+    },
+    {
+      "title": "Building Real-Time Video AI Applications",
+      "organization": "NVIDIA",
+      "description": "Completed NVIDIA Course on Building Real-Time Video AI Applications"
+    },
+    {
+      "title": "AWS Educate Machine Learning Foundations Certificate",
+      "organization": "AWS",
+      "description": "Earned AWS Educate Machine Learning Foundations Certificate, demonstrating cloud-based ML proficiency"
+    }
+  ],
+  "keyProjects": [
+    {
+      "title": "GenAI-Powered Customer Support Agent @ Codage Habitation",
+      "description": "Led a team of 5+ engineers to design and deploy a retrieval-augmented generation (RAG) chatbot using Anthropic Claude sonnet 3.0, LangChain, Next.js and AWS Bedrock. Improved customer support efficiency by reducing average response time by 35% and increasing first-contact resolution rate by 25%, driving higher customer satisfaction.",
+      "tags": ["Anthropic Claude sonnet 3.0", "LangChain", "RAG", "AWS Bedrock", "Python", "React", "Next.js"],
+      "link": "https://github.com/devparikh0506/travel_mitra?tab=readme-ov-file#travel-mitra"
+    },
+    {
+      "title": "BibleProject Platform Backend @ Codage Habitation",
+      "description": "Built a scalable backend using Django and Next.js with microservices architecture and secure media handling via AWS S3. Containerized services with Docker and automated deployments through CI/CD pipelines, improving release reliability and speed.",
+      "tags": ["Django", "Next.js", "Microservices", "Docker", "PostgreSQL", "AWS S3"],
+      "link": "https://www.bibleproject.com"
+    },
+    {
+      "title": "EEG Emotion Detection",
+      "description": "Built an AI model using deep learning (Deep-RNN) to detect human emotions such as high/low valence and arousal from physiological signals in the DEAP dataset, achieving ~62% accuracy. Applied data preprocessing, augmentation, and neural networks to improve recognition performance, enabling applications in human–computer interaction and affective computing.",
+      "tags": ["Python", "PyTorch", "CNN", "RNN", "Deep-RNN", "EEG", "DEAP Dataset"],
+      "link": "https://github.com/devparikh0506/EEG_Emotion_Detection?tab=readme-ov-file#emotion-detection-using-deap-dataset"
+    },
+    {
+      "title": "Motor Imagery Robotic Control @ UMBC (Vinjamuri Lab)",
+      "description": "Built CNN-based motor imagery classification models in PyTorch (CUDA-accelerated) to decode EEG signals for controlling the Kinova Gen3 robotic arm, achieving 70% classification accuracy. Simulated robotic movements in Isaac Sim to train and validate real-time arm control pipelines, advancing applications in prosthetic assistance and EEG-driven automation.",
+      "tags": ["Python", "PyTorch (CUDA)", "CNN", "Signal Processing", "Kinova Gen3", "OpenCV"],
+      "link": "#"
+    }
+  ]
+}

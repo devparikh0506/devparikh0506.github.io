@@ -133,7 +133,7 @@
       </button>
 
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex gap-6 text-base font-medium">
+      <nav class="hidden md:flex gap-6 text-base font-medium items-center">
         <a
           href="/"
           class="nav-link text-blue-400 font-semibold hover:text-blue-400 active"
@@ -146,6 +146,14 @@
         <a href="contact" class="nav-link text-zinc-300 hover:text-blue-400"
           >Contact</a
         >
+        <a
+          href="https://drive.google.com/file/d/1FJ8Uu4NPTxvwX5I_-b2nZ-yh5RJevJ_o/view"
+          target="_blank"
+          class="px-3 py-1.5 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium rounded-md transition flex items-center gap-1.5"
+        >
+          <i class="fas fa-file-alt"></i>
+          <span>Resume</span>
+        </a>
       </nav>
     </header>
     <!-- SIDEBAR + OVERLAY (Place outside <header>) -->
@@ -181,22 +189,30 @@
     <a href="about" class="text-zinc-300 hover:text-blue-400">About</a>
     <a href="projects" class="text-zinc-300 hover:text-blue-400">Projects</a>
     <a href="contact" class="text-zinc-300 hover:text-blue-400">Contact</a>
+    <a
+      href="https://drive.google.com/file/d/1FJ8Uu4NPTxvwX5I_-b2nZ-yh5RJevJ_o/view"
+      target="_blank"
+      class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-center font-medium rounded-md transition flex items-center justify-center gap-2"
+    >
+      <i class="fas fa-file-alt"></i>
+      <span>Resume</span>
+    </a>
   </nav>
 </div>
-    <main>
+    <main class="flex-1">
       <!-- Hero Section -->
       <section
-        class="flex-1 flex flex-col items-center justify-center px-6 py-20 text-center relative z-10"
+        class="flex flex-col items-center justify-center px-6 py-12 md:py-16 min-h-[calc(100vh-120px)] text-center relative z-10"
       >
         <!-- Profile Image -->
         <img
           src="assets/avatar.png"
           alt="Dev Parikh Avatar"
-          class="w-32 h-32 md:w-40 md:h-40 rounded-full ring-4 ring-blue-400 mb-6 shadow-lg transition-transform hover:scale-105"
+          class="hero-avatar w-32 h-32 md:w-40 md:h-40 rounded-full ring-4 ring-blue-400 mb-6 shadow-lg transition-transform hover:scale-105"
         />
 
         <!-- Hero Text -->
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-2">
+        <h2 class="hero-name text-4xl md:text-5xl font-bold text-white mb-2">
           Hi, I'm <span class="text-blue-400">Dev Parikh</span>
         </h2>
 
@@ -206,22 +222,12 @@
         </h3>
 
         <!-- Bio -->
-        <p class="max-w-2xl text-lg md:text-xl text-zinc-400 mb-6 leading-relaxed">
-          I’m a
-          <span class="text-blue-400 font-semibold"
-            >Machine Learning Engineer</span
-          >
-          with strong Software Engineering expertise, passionate about
-          <span class="text-blue-400">human-computer interaction</span>,
-          <span class="text-blue-400">real-time AI systems</span>, and building
-          <span class="text-blue-400">scalable, intelligent tools</span> that
-          shape the future of technology. With hands-on experience in
-          Brain-Computer Interfaces, NLP, and full-stack development, I thrive
-          at the intersection of innovation and impact.
+        <p class="hero-bio max-w-3xl text-base md:text-lg text-zinc-400 mb-8 leading-relaxed px-4">
+          <!-- Bio loaded dynamically from content.json -->
         </p>
 
         <!-- Buttons -->
-        <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
           <a
             href="https://github.com/devparikh0506"
             target="_blank"
@@ -251,205 +257,9 @@
         <h2 class="text-4xl font-bold text-center mb-16">⚙️ Core Expertise</h2>
 
         <div
-          class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+          class="core-expertise-grid max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
         >
-          <!-- Skill Card Template -->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="100"
-            class="group bg-white/5 backdrop-blur-lg border border-zinc-700 rounded-2xl p-6 transition duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/20 hover:border-blue-500 hover:bg-white/10"
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div
-                class="text-3xl text-purple-400 group-hover:text-white transition duration-500 ease-in-out group-hover:scale-110"
-              >
-                <i class="fas fa-brain"></i>
-              </div>
-              <h3 class="text-lg font-semibold tracking-wide text-white">
-                Machine Learning & AI
-              </h3>
-            </div>
-            <div class="h-0.5 w-full bg-zinc-700 mb-4 rounded"></div>
-            <div class="text-sm text-zinc-300 space-y-2 pl-1">
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> PyTorch,
-                TensorFlow, Keras
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i>
-                Transformers, Hugging Face
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> OpenCV,
-                Real-Time Pipelines
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> EEG & BCI
-                Modeling
-              </p>
-            </div>
-          </div>
-
-          <!-- Web Development -->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="100"
-            class="group bg-white/5 backdrop-blur-lg border border-zinc-700 rounded-2xl p-6 transition duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/20 hover:border-blue-500 hover:bg-white/10"
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div
-                class="text-3xl text-yellow-400 group-hover:text-white transition duration-500 ease-in-out group-hover:scale-110"
-              >
-                <i class="fas fa-code"></i>
-              </div>
-              <h3 class="text-lg font-semibold tracking-wide text-white">
-                Web Development
-              </h3>
-            </div>
-            <div class="h-0.5 w-full bg-zinc-700 mb-4 rounded"></div>
-            <div class="text-sm text-zinc-300 space-y-2 pl-1">
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> React,
-                Next.js, Node.js
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> Django,
-                Flask, JWT Auth
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> NPM
-                Plugins, REST APIs
-              </p>
-            </div>
-          </div>
-
-          <!-- Big Data & Cloud -->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="100"
-            class="group bg-white/5 backdrop-blur-lg border border-zinc-700 rounded-2xl p-6 transition duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/20 hover:border-blue-500 hover:bg-white/10"
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div
-                class="text-3xl text-blue-400 group-hover:text-white transition duration-500 ease-in-out group-hover:scale-110"
-              >
-                <i class="fas fa-cloud"></i>
-              </div>
-              <h3 class="text-lg font-semibold tracking-wide text-white">
-                Big Data & Cloud
-              </h3>
-            </div>
-            <div class="h-0.5 w-full bg-zinc-700 mb-4 rounded"></div>
-            <div class="text-sm text-zinc-300 space-y-2 pl-1">
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> AWS (EC2,
-                S3, Lambda, Glue)
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> PySpark,
-                Hadoop
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> ETL
-                Pipelines, Data Lakes
-              </p>
-            </div>
-          </div>
-
-          <!-- Programming Languages -->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="100"
-            class="group bg-white/5 backdrop-blur-lg border border-zinc-700 rounded-2xl p-6 transition duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/20 hover:border-blue-500 hover:bg-white/10"
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div
-                class="text-3xl text-green-400 group-hover:text-white transition duration-500 ease-in-out group-hover:scale-110"
-              >
-                <i class="fas fa-terminal"></i>
-              </div>
-              <h3 class="text-lg font-semibold tracking-wide text-white">
-                Programming Languages
-              </h3>
-            </div>
-            <div class="h-0.5 w-full bg-zinc-700 mb-4 rounded"></div>
-            <div class="text-sm text-zinc-300 space-y-2 pl-1">
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> Python,
-                JavaScript, C++, SQL
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i>
-                Object-Oriented & Functional
-              </p>
-            </div>
-          </div>
-
-          <!-- DevOps & CI/CD -->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="100"
-            class="group bg-white/5 backdrop-blur-lg border border-zinc-700 rounded-2xl p-6 transition duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/20 hover:border-blue-500 hover:bg-white/10"
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div
-                class="text-3xl text-cyan-400 group-hover:text-white transition duration-500 ease-in-out group-hover:scale-110"
-              >
-                <i class="fas fa-cogs"></i>
-              </div>
-              <h3 class="text-lg font-semibold tracking-wide text-white">
-                DevOps & CI/CD
-              </h3>
-            </div>
-            <div class="h-0.5 w-full bg-zinc-700 mb-4 rounded"></div>
-            <div class="text-sm text-zinc-300 space-y-2 pl-1">
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> Git,
-                GitHub Actions, Docker
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> CI/CD
-                Pipelines, DigitalOcean
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> Agile
-                Workflows, Jira
-              </p>
-            </div>
-          </div>
-
-          <!-- Data & Visualization -->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="100"
-            class="group bg-white/5 backdrop-blur-lg border border-zinc-700 rounded-2xl p-6 transition duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/20 hover:border-blue-500 hover:bg-white/10"
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div
-                class="text-3xl text-pink-400 group-hover:text-white transition duration-500 ease-in-out group-hover:scale-110"
-              >
-                <i class="fas fa-chart-bar"></i>
-              </div>
-              <h3 class="text-lg font-semibold tracking-wide text-white">
-                Data & Visualization
-              </h3>
-            </div>
-            <div class="h-0.5 w-full bg-zinc-700 mb-4 rounded"></div>
-            <div class="text-sm text-zinc-300 space-y-2 pl-1">
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> MySQL,
-                MongoDB, Firebase
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> Tableau,
-                Power BI
-              </p>
-              <p>
-                <i class="fas fa-check-circle text-blue-400 mr-2"></i> Real-Time
-                Dashboards
-              </p>
-            </div>
-          </div>
+          <!-- Core Expertise loaded dynamically from content.json -->
         </div>
       </section>
 
@@ -466,125 +276,7 @@
           data-aos-delay="100"
         >
           <div class="swiper-wrapper">
-            <!-- Project Slide -->
-            <div
-              class="swiper-slide bg-white/5 backdrop-blur-lg border border-zinc-700 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-transform duration-500 hover:-translate-y-1"
-            >
-              <img
-                src="assets/projects/volz.png"
-                alt="VOLZ Telecom Website"
-                class="w-full h-48 object-cover object-top rounded-t-2xl"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">VOLZ Telecom Website</h3>
-                <p class="text-sm text-zinc-300 mb-4">
-                  Corporate site for Ukrainian telecom company built with Gatsby
-                  and Sanity CMS.
-                </p>
-                <div class="flex space-x-4 text-lg text-amber-400 mb-4">
-                  <i class="fab fa-react"></i>
-                  <i class="fas fa-database"></i>
-                  <i class="fab fa-js-square"></i>
-                </div>
-                <div class="flex space-x-3">
-                  <a
-                    href="https://volz.ua/"
-                    target="_blank"
-                    class="inline-flex items-center px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium rounded-md transition"
-                  >
-                    <i class="fas fa-external-link-alt mr-2"></i> Visit Site
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- <div
-              class="swiper-slide bg-white/5 backdrop-blur-lg border border-zinc-700 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-transform duration-500 hover:-translate-y-1"
-            >
-              <img
-                src="assets/projects/soccer.png"
-                alt="Soccer Valuation"
-                class="w-full h-48 object-cover object-top rounded-t-2xl"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">
-                  Soccer Player Valuation
-                </h3>
-                <p class="text-sm text-zinc-300 mb-4">
-                  ML model predicting transfer values using ensemble learning
-                  and neural nets.
-                </p>
-                <div class="flex space-x-4 text-lg text-blue-400">
-                  <i class="fab fa-python"></i>
-                  <i class="fas fa-brain"></i>
-                </div>
-                <a
-                  href="https://github.com/your-repo"
-                  target="_blank"
-                  class="mt-3 inline-flex items-center px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium rounded-md transition"
-                >
-                  <i class="fab fa-github mr-2 text-base"></i> View on GitHub
-                </a>
-              </div>
-            </div> -->
-            <div
-              class="swiper-slide bg-white/5 backdrop-blur-lg border border-zinc-700 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-transform duration-500 hover:-translate-y-1"
-            >
-              <img
-                src="assets/projects/uas.png"
-                alt="UAS Risk Analysis"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">UAS Risk Analysis</h3>
-                <p class="text-sm text-zinc-300 mb-4">
-                  Big Data analysis on FAA + OpenSky datasets using PySpark and
-                  AWS Glue.
-                </p>
-                <div class="flex space-x-4 text-lg text-yellow-400">
-                  <i class="fab fa-aws"></i>
-                  <i class="fas fa-cloud"></i>
-                  <i class="fab fa-python"></i>
-                </div>
-                <a
-                  href="https://github.com/your-repo"
-                  target="_blank"
-                  class="mt-3 inline-flex items-center px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium rounded-md transition"
-                >
-                  <i class="fab fa-github mr-2 text-base"></i> View on GitHub
-                </a>
-              </div>
-            </div>
-
-            <div
-              class="swiper-slide bg-white/5 backdrop-blur-lg border border-zinc-700 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-transform duration-500 hover:-translate-y-1"
-            >
-              <img
-                src="assets/projects/emotion.png"
-                alt="Emotion Detection"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">
-                  EEG Emotion Detection
-                </h3>
-                <p class="text-sm text-zinc-300 mb-4">
-                  ChronoNet model classifying DEAP EEG signals with 95%
-                  accuracy.
-                </p>
-                <div class="flex space-x-4 text-lg text-purple-400">
-                  <i class="fas fa-brain"></i>
-                  <i class="fas fa-wave-square"></i>
-                  <i class="fab fa-python"></i>
-                </div>
-                <a
-                  href="https://github.com/your-repo"
-                  target="_blank"
-                  class="mt-3 inline-flex items-center px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium rounded-md transition"
-                >
-                  <i class="fab fa-github mr-2 text-base"></i> View on GitHub
-                </a>
-              </div>
-            </div>
+            <!-- Featured projects loaded dynamically from content.json -->
           </div>
         </div>
         <div class="mt-12 text-center">
@@ -657,7 +349,6 @@
 
       <div class="text-center text-sm text-zinc-500 mt-10">
         © 2025 Dev Parikh. All rights reserved.
-      </div>
     </footer>
 
     <script src="scripts/vendor/typed.min.js"></script>

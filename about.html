@@ -116,7 +116,6 @@
     <header
       class="sticky z-50 top-0 shadow-md backdrop-blur-md text-zinc-300 py-4 px-10 flex flex-wrap items-center justify-between"
     >
-      <!-- Logo -->
       <div class="flex items-center space-x-4">
         <div class="flex flex-col items-start">
           <h1 class="text-2xl md:text-3xl font-bold tracking-wide text-white">
@@ -135,22 +134,21 @@
       </button>
 
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex gap-6 text-base font-medium">
+      <nav class="hidden md:flex gap-6 text-base font-medium items-center">
+        <a href="/" class="nav-link text-zinc-300 hover:text-blue-400">Home</a>
+        <a href="about" class="nav-link text-blue-400 font-semibold hover:text-blue-400 active">About</a>
+        <a href="projects" class="nav-link text-zinc-300 hover:text-blue-400">Projects</a>
+        <a href="contact" class="nav-link text-zinc-300 hover:text-blue-400">Contact</a>
         <a
-          href="/"
-          class="nav-link text-zinc-300 font-semibold hover:text-blue-400"
-          >Home</a
+          href="https://drive.google.com/file/d/1FJ8Uu4NPTxvwX5I_-b2nZ-yh5RJevJ_o/view"
+          target="_blank"
+          class="px-3 py-1.5 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium rounded-md transition flex items-center gap-1.5"
         >
-        <a href="about" class="nav-link text-blue-400 hover:text-blue-400 active">About</a>
-        <a href="projects" class="nav-link text-zinc-300 hover:text-blue-400"
-          >Projects</a
-        >
-        <a href="contact" class="nav-link text-zinc-300 hover:text-blue-400"
-          >Contact</a
-        >
+          <i class="fas fa-file-alt"></i>
+          <span>Resume</span>
+        </a>
       </nav>
     </header>
-
     <!-- SIDEBAR + OVERLAY (Place outside <header>) -->
     <!-- Sidebar Overlay -->
 <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
@@ -181,9 +179,17 @@
   <!-- Nav Links -->
   <nav class="mt-6 flex flex-col gap-6 text-lg font-medium">
     <a href="/" class="text-zinc-300 hover:text-blue-400">Home</a>
-    <a href="about" class="text-blue-300 hover:text-blue-400">About</a>
+    <a href="about" class="text-blue-400 hover:text-blue-400 active">About</a>
     <a href="projects" class="text-zinc-300 hover:text-blue-400">Projects</a>
     <a href="contact" class="text-zinc-300 hover:text-blue-400">Contact</a>
+    <a
+      href="https://drive.google.com/file/d/1FJ8Uu4NPTxvwX5I_-b2nZ-yh5RJevJ_o/view"
+      target="_blank"
+      class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-center font-medium rounded-md transition flex items-center justify-center gap-2"
+    >
+      <i class="fas fa-file-alt"></i>
+      <span>Resume</span>
+    </a>
   </nav>
 </div>
     <main>
@@ -211,16 +217,8 @@
             >
               Professional Summary
             </h2>
-            <p class="text-lg leading-relaxed text-gray-300">
-              Passionate and results-driven Data Scientist and Machine Learning
-              Engineer with a strong foundation in deep learning, signal
-              processing, and full-stack development. Experienced in designing
-              and deploying AI-driven solutions across neurotechnology, radar
-              signal analysis, and chatbot systems. Proven ability to combine
-              research insights with scalable engineering practices to solve
-              real-world problems. Actively publishing research in IEEE journals
-              and developing production-grade AI models using Python, PyTorch,
-              and cloud-native tools.
+            <p class="about-summary text-lg leading-relaxed text-gray-300">
+              <!-- Summary loaded dynamically from content.json -->
             </p>
           </div>
         </div>
@@ -237,62 +235,8 @@
             Education
           </h2>
 
-          <div class="space-y-8">
-            <!-- Master's Degree -->
-            <div
-              class="bg-gray-800/70 backdrop-blur-sm p-6 rounded-xl shadow-lg"
-            >
-              <div
-                class="flex flex-col md:flex-row justify-between md:items-start"
-              >
-                <div>
-                  <h3 class="text-xl font-semibold text-white">
-                    Master of Science in Data Science
-                  </h3>
-                  <p class="text-gray-300">
-                    University of Maryland, Baltimore County — Maryland, USA
-                  </p>
-                </div>
-                <div
-                  class="text-sm text-gray-400 italic mt-2 md:mt-0 md:text-right"
-                >
-                  <p>Jan 2024 – Dec 2025</p>
-                  <p>GPA: 3.83 / 4.00</p>
-                </div>
-              </div>
-              <p class="text-sm text-gray-400 mt-3">
-                Coursework: Machine Learning, Data Analysis, Data Engineering,
-                Deep Learning, Natural Language Processing
-              </p>
-            </div>
-
-            <!-- Bachelor's Degree -->
-            <div
-              class="bg-gray-800/70 backdrop-blur-sm p-6 rounded-xl shadow-lg"
-            >
-              <div
-                class="flex flex-col md:flex-row justify-between md:items-start"
-              >
-                <div>
-                  <h3 class="text-xl font-semibold text-white">
-                    Bachelor of Engineering in Computer Engineering
-                  </h3>
-                  <p class="text-gray-300">
-                    Gujarat Technological University — Gujarat, India
-                  </p>
-                </div>
-                <div
-                  class="text-sm text-gray-400 italic mt-2 md:mt-0 md:text-right"
-                >
-                  <p>Jun 2019 – May 2023</p>
-                  <p>CGPA: 8.11 / 10.00</p>
-                </div>
-              </div>
-              <p class="text-sm text-gray-400 mt-3">
-                Coursework: Data Structures & Algorithms, Database Systems,
-                Object-Oriented Programming, Web Development
-              </p>
-            </div>
+          <div class="education-container space-y-8">
+            <!-- Education loaded dynamically from content.json -->
           </div>
         </div>
       </section>
@@ -316,184 +260,8 @@
             <div
               class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-400"
             ></div>
-
-            <!-- NSF BRAIN Center -->
-            <div
-              class="mb-16 flex flex-col md:flex-row justify-between items-center"
-            >
-              <!-- Date Left -->
-              <div
-                class="md:w-5/12 text-sm text-gray-400 text-right md:pr-10 order-1 md:order-none"
-              >
-                <p class="italic text-base md:text-lg text-gray-400">
-                  Oct 2024 – Present
-                </p>
-              </div>
-              <!-- Dot -->
-              <div
-                class="w-4 h-4 bg-blue-400 border-2 border-white rounded-full z-10"
-              ></div>
-              <!-- Content Right -->
-              <div
-                class="md:w-5/12 bg-gray-800/70 backdrop-blur-sm p-5 rounded-xl shadow-lg mt-5 md:mt-0"
-              >
-                <h3 class="text-xl font-semibold text-white">
-                  Machine Learning Researcher – Brain-Computer Interface (BCI)
-                </h3>
-                <p class="text-gray-300">NSF BRAIN Center — Maryland, USA</p>
-                <ul class="list-disc text-gray-400 text-sm mt-3 ml-5 space-y-1">
-                  <li>
-                    Architected a Vision Transformer (ViT) pipeline integrating
-                    8-channel EEG signals (512Hz sampling) with Kinova Gen3
-                    robotic arm control, achieving 95% grasp success rate in
-                    real-time BCI applications.
-                  </li>
-                  <li>
-                    Built a Deep Recurrent Neural Network (D-RNN) for EEG-based
-                    lie detection by analyzing P300 event-related potentials,
-                    achieving 88% classification accuracy and outperforming
-                    traditional SVM methods in mock interrogation scenarios.
-                  </li>
-                  <li>
-                    Collaborated on a publication in IEEE Access (2025),
-                    presenting novel approaches for multimodal emotion
-                    recognition using EEG and facial features.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Codage Habitation -->
-            <div
-              class="mb-16 flex flex-col md:flex-row justify-between items-center"
-            >
-              <!-- Content Left -->
-              <div
-                class="md:w-5/12 bg-gray-800/70 backdrop-blur-sm p-5 rounded-xl shadow-lg mt-5 md:mt-0"
-              >
-                <h3 class="text-xl font-semibold text-white">
-                  Software Engineer – Machine Learning
-                </h3>
-                <p class="text-gray-300">Codage Habitation — Gujarat, India</p>
-                <ul class="list-disc text-gray-400 text-sm mt-3 ml-5 space-y-1">
-                  <li>
-                    Developed and deployed end-to-end machine learning solutions
-                    integrated into client-facing applications, combining CNNs
-                    for image processing and RNNs for sequential data modeling,
-                    achieving more than 90% accuracy in real-time prediction
-                    tasks.
-                  </li>
-                  <li>
-                    Built and operationalized predictive models and
-                    classification systems aligned with specific client needs,
-                    integrating them into dynamic dashboards and automated
-                    pipelines, resulting in a 20% improvement in decision-making
-                    efficiency across 5+ projects.
-                  </li>
-                  <li>
-                    Created 50+ real-time dashboards with React and Django,
-                    increasing test coverage from 60% to 90% using Jest,
-                    reducing production bugs by 30%.
-                  </li>
-                  <li>
-                    Designed a reusable chatbot framework using Hugging Face
-                    Transformers, Llama, and LangChain, enabling rapid
-                    deployment across multiple domains and reducing
-                    conversational agent development time by 65%.
-                  </li>
-                  <li>
-                    Constructed a CLI tool to auto-generate code for React and
-                    Node.js, saving 500+ engineering hours annually and
-                    standardizing code quality across teams.
-                  </li>
-                  <li>
-                    Built CI/CD pipelines to automate website deployment on
-                    cloud (AWS, DigitalOcean) using GitHub Actions, streamlining
-                    the deployment process and ensuring consistent updates
-                    across environments.
-                  </li>
-                  <li>
-                    Architected a reusable component toolkit with 50+ styling
-                    options that reduced developer involvement by 90%, saving
-                    400+ hours annually.
-                  </li>
-                  <li>
-                    Programmed a Node Package Manager (NPM) plugin to
-                    automatically identify and populate essential search engine
-                    optimization (SEO) features on the website, reducing the
-                    annual workload of developers by 300+ hours.
-                  </li>
-                  <li>
-                    Engineered an employee activity monitoring system with
-                    Python and React; leveraged JWT authentication to enhance
-                    security and reduced time theft by 40%.
-                  </li>
-                  <li>
-                    Collaborated in Agile teams, translating stakeholder
-                    requirements into production-grade ML-powered features,
-                    following SDLC best practices to deliver reliable,
-                    maintainable systems.
-                  </li>
-                </ul>
-              </div>
-              <!-- Dot -->
-              <div
-                class="w-4 h-4 bg-blue-400 border-2 border-white rounded-full z-10"
-              ></div>
-              <!-- Date Right -->
-              <div
-                class="md:w-5/12 text-sm text-gray-400 text-left md:pl-10 order-1 md:order-none"
-              >
-                <p class="italic text-base md:text-lg text-gray-400">
-                  Nov 2021 – Jan 2024
-                </p>
-              </div>
-            </div>
-
-            <!-- Frontend Army -->
-            <div
-              class="mb-0 flex flex-col md:flex-row justify-between items-center"
-            >
-              <!-- Date Left -->
-              <div
-                class="md:w-5/12 text-sm text-gray-400 text-right md:pr-10 order-1 md:order-none"
-              >
-                <p class="italic text-base md:text-lg text-gray-400">
-                  Aug 2021 – Oct 2021
-                </p>
-              </div>
-              <!-- Dot -->
-              <div
-                class="w-4 h-4 bg-blue-400 border-2 border-white rounded-full z-10"
-              ></div>
-              <!-- Content Right -->
-              <div
-                class="md:w-5/12 bg-gray-800/70 backdrop-blur-sm p-5 rounded-xl shadow-lg mt-5 md:mt-0"
-              >
-                <h3 class="text-xl font-semibold text-white">
-                  Software Engineer Intern
-                </h3>
-                <p class="text-gray-300">Frontend Army — Gujarat, India</p>
-                <ul class="list-disc text-gray-400 text-sm mt-3 ml-5 space-y-1">
-                  <li>
-                    Designed 10+ admin dashboards using React and Node.js,
-                    enhancing fast content management and reducing website
-                    development time by 40%.
-                  </li>
-                  <li>
-                    Developed a marketing website with GatsbyJS for frontend
-                    development, structuring a backend service using SanityIO,
-                    and integrated it using Groq queries for live content
-                    changes with admin access, decreasing content management
-                    time by 25%.
-                  </li>
-                  <li>
-                    Constructed a scalable E-Learning platform using Next.js,
-                    facilitating performance tracking for 10,000+ students and
-                    visualizing real-time progress data.
-                  </li>
-                </ul>
-              </div>
+            <div class="experience-timeline">
+              <!-- Experience loaded dynamically from content.json -->
             </div>
           </div>
         </div>
@@ -509,121 +277,8 @@
             Experience
           </h2>
 
-          <div class="space-y-10">
-            <!-- NSF BRAIN Center -->
-            <div class="flex flex-col md:flex-row md:items-start md:space-x-8">
-              <!-- Date -->
-              <div
-                class="mb-2 md:mb-0 md:w-1/3 text-sm text-blue-300 font-medium"
-              >
-                <p>Oct 2024 – Present</p>
-              </div>
-              <!-- Content -->
-              <div
-                class="bg-gray-800/70 backdrop-blur-sm p-5 rounded-xl shadow-md md:w-2/3"
-              >
-                <h3 class="text-white font-semibold text-lg mb-1">
-                  Machine Learning Researcher – BCI
-                </h3>
-                <p class="text-gray-400 text-sm mb-2">
-                  NSF BRAIN Center, Maryland, USA
-                </p>
-                <ul
-                  class="list-disc list-inside text-gray-300 text-sm space-y-1"
-                >
-                  <li>
-                    Architected a Vision Transformer EEG pipeline for Kinova
-                    Gen3 with 95% grasp success rate.
-                  </li>
-                  <li>
-                    Developed D-RNN for P300-based lie detection achieving 88%
-                    accuracy.
-                  </li>
-                  <li>
-                    Co-authored IEEE Access 2025 publication on multimodal
-                    emotion recognition using EEG and facial features.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Codage Habitation -->
-            <div class="flex flex-col md:flex-row md:items-start md:space-x-8">
-              <!-- Date -->
-              <div
-                class="mb-2 md:mb-0 md:w-1/3 text-sm text-blue-300 font-medium"
-              >
-                <p>Nov 2021 – Jan 2024</p>
-              </div>
-              <!-- Content -->
-              <div
-                class="bg-gray-800/70 backdrop-blur-sm p-5 rounded-xl shadow-md md:w-2/3"
-              >
-                <h3 class="text-white font-semibold text-lg mb-1">
-                  Software Engineer – Machine Learning
-                </h3>
-                <p class="text-gray-400 text-sm mb-2">
-                  Codage Habitation, Gujarat, India
-                </p>
-                <ul
-                  class="list-disc list-inside text-gray-300 text-sm space-y-1"
-                >
-                  <li>
-                    Developed end-to-end ML pipelines for image and sequential
-                    data, achieving 90%+ accuracy.
-                  </li>
-                  <li>
-                    Created 50+ real-time dashboards with React and Django;
-                    improved test coverage by 30%.
-                  </li>
-                  <li>
-                    Designed a reusable chatbot framework using LangChain and
-                    Transformers, reducing dev time by 65%.
-                  </li>
-                  <li>
-                    Built CLI tools and CI/CD pipelines for AWS/DigitalOcean
-                    deployment, saving 500+ hours annually.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Frontend Army -->
-            <div class="flex flex-col md:flex-row md:items-start md:space-x-8">
-              <!-- Date -->
-              <div
-                class="mb-2 md:mb-0 md:w-1/3 text-sm text-blue-300 font-medium"
-              >
-                <p>Aug 2021 – Oct 2021</p>
-              </div>
-              <!-- Content -->
-              <div
-                class="bg-gray-800/70 backdrop-blur-sm p-5 rounded-xl shadow-md md:w-2/3"
-              >
-                <h3 class="text-white font-semibold text-lg mb-1">
-                  Software Engineer Intern
-                </h3>
-                <p class="text-gray-400 text-sm mb-2">
-                  Frontend Army, Gujarat, India
-                </p>
-                <ul
-                  class="list-disc list-inside text-gray-300 text-sm space-y-1"
-                >
-                  <li>
-                    Built 10+ admin dashboards using React & Node.js, reducing
-                    delivery time by 40%.
-                  </li>
-                  <li>
-                    Created marketing site using Gatsby + Sanity CMS with live
-                    content updates.
-                  </li>
-                  <li>
-                    Developed scalable E-Learning platform for 10,000+ students
-                    with real-time tracking.
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div class="experience-mobile space-y-10">
+            <!-- Experience loaded dynamically from content.json -->
           </div>
         </div>
       </section>
@@ -635,286 +290,6 @@
           >
             Skills
           </h2>
-
-          <!-- Programming Languages -->
-          <div class="mb-8">
-            <h3 class="text-xl font-semibold text-white mb-4">
-              Programming Languages
-            </h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-python-plain"></i>Python
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-javascript-plain"></i>JavaScript
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-html5-plain"></i>HTML
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-cplusplus-plain"></i>C++
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-c-plain"></i>C
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-mysql-plain"></i>SQL
-              </div>
-            </div>
-          </div>
-
-          <!-- Machine Learning & AI -->
-          <div class="mb-8">
-            <h3 class="text-xl font-semibold text-white mb-4">
-              Machine Learning & AI
-            </h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-pytorch-original"></i>PyTorch
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-tensorflow-original"></i>TensorFlow
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-numpy-original"></i>NumPy
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-pandas-original"></i>Pandas
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Scikit-learn
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Transformers
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                NLTK
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                TextBlob
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-opencv-original"></i>OpenCV
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Regression, Classification, Clustering
-              </div>
-            </div>
-          </div>
-
-          <!-- Web Frameworks & Libraries -->
-          <div class="mb-8">
-            <h3 class="text-xl font-semibold text-white mb-4">
-              Frameworks & Libraries
-            </h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-react-original"></i>React
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-nextjs-original"></i>Next.js
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-nodejs-plain"></i>Node.js
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-django-plain"></i>Django
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Flask
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Gatsby.js
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-apachespark-original"></i>PySpark
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-hadoop-plain"></i>Hadoop
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                AWS Glue
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Jest
-              </div>
-            </div>
-          </div>
-
-          <!-- Cloud & Big Data -->
-          <div class="mb-8">
-            <h3 class="text-xl font-semibold text-white mb-4">
-              Cloud & Big Data
-            </h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-amazonwebservices-original"></i>AWS (S3, EC2,
-                Lambda, RDS)
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-mysql-plain"></i>MySQL
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-postgresql-plain"></i>PostgreSQL
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-mongodb-plain"></i>MongoDB
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-firebase-plain"></i>Firebase
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                ETL (PySpark, SSIS)
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Data Warehousing
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Power BI
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Tableau
-              </div>
-            </div>
-          </div>
-
-          <!-- DevOps & Deployment -->
-          <div class="mb-8">
-            <h3 class="text-xl font-semibold text-white mb-4">
-              DevOps & Deployment
-            </h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-git-plain"></i>Git
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-github-original"></i>GitHub
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-docker-plain"></i>Docker
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                <i class="devicon-digitalocean-plain"></i>DigitalOcean
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Postman
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Jira
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Bitbucket, GitLab, SourceTree
-              </div>
-            </div>
-          </div>
-
-          <!-- Software Development -->
-          <div>
-            <h3 class="text-xl font-semibold text-white mb-4">
-              Software Engineering
-            </h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Agile (Scrum, Kanban)
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                SDLC
-              </div>
-              <div
-                class="flex flex-col items-center text-center bg-gray-800/70 backdrop-blur-sm p-4 rounded-xl shadow-md text-white text-sm hover:shadow-blue-400/20 transition duration-300 gap-2"
-              >
-                Unit Testing (Jest)
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       <section
@@ -928,134 +303,8 @@
             Key Projects
           </h2>
 
-          <div class="space-y-8">
-            <!-- Project 1: Volz UA -->
-            <div
-              class="bg-gray-800/70 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-blue-400/30 transition duration-300"
-            >
-              <h3 class="text-xl font-semibold text-white mb-2">
-                Volz UA – Unified Analytics Platform
-              </h3>
-              <p class="text-gray-300 text-sm">
-                Built a scalable web-based analytics platform for manufacturing
-                clients, enabling real-time monitoring of telemetry, sensor
-                data, and supply chain KPIs using interactive dashboards and
-                serverless infrastructure.
-              </p>
-              <div
-                class="flex justify-between items-center mt-4 flex-wrap gap-2 text-xs"
-              >
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >React</span
-                  >
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >Node.js</span
-                  >
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >AWS Lambda</span
-                  >
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >Power BI</span
-                  >
-                </div>
-                <a
-                  href="https://volz.ua"
-                  class="text-sm text-blue-400 hover:underline whitespace-nowrap"
-                  >Visit</a
-                >
-              </div>
-            </div>
-
-            <!-- Project 2: EEG-Based Emotion Detection -->
-            <div
-              class="bg-gray-800/70 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-blue-400/30 transition duration-300"
-            >
-              <h3 class="text-xl font-semibold text-white mb-2">
-                EEG-Based Emotion Detection
-              </h3>
-              <p class="text-gray-300 text-sm">
-                Designed and trained deep learning models on the DEAP dataset
-                using CNN and Transformer architectures to classify emotional
-                states based on EEG signals. Achieved 95% accuracy with
-                subject-independent training and signal augmentation.
-              </p>
-              <div
-                class="flex justify-between items-center mt-4 flex-wrap gap-2 text-xs"
-              >
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >EEG</span
-                  >
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >CNN</span
-                  >
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >Transformer</span
-                  >
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >DEAP Dataset</span
-                  >
-                </div>
-                <a
-                  href="https://github.com/devparikh0506/EEG_Emotion_Detection?tab=readme-ov-file#emotion-detection-using-deap-dataset"
-                  class="text-sm text-blue-400 hover:underline whitespace-nowrap"
-                  target="_blank"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-
-            <!-- Project 3: LangChain Chatbot -->
-            <div
-              class="bg-gray-800/70 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-blue-400/30 transition duration-300"
-            >
-              <h3 class="text-xl font-semibold text-white mb-2">
-                LangChain-Powered AI Chatbot
-              </h3>
-              <p class="text-gray-300 text-sm">
-                Designed a multi-turn chatbot using Hugging Face, LLaMA, and
-                LangChain. Reduced deployment time by 65% using modular backend.
-              </p>
-              <div
-                class="flex justify-between items-center mt-4 flex-wrap gap-2 text-xs"
-              >
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >LangChain</span
-                  >
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >LLaMA</span
-                  >
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >Transformers</span
-                  >
-                  <span
-                    class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
-                    >Node.js</span
-                  >
-                </div>
-                <a
-                  href="https://github.com/devparikh0506/travel_mitra?tab=readme-ov-file#travel-mitra"
-                  class="text-sm text-blue-400 hover:underline whitespace-nowrap"
-                  target="_blank"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
+          <div class="key-projects-container space-y-8">
+            <!-- Key Projects loaded dynamically from content.json -->
           </div>
         </div>
       </section>
@@ -1071,119 +320,11 @@
             Publications
           </h2>
 
-          <div class="space-y-6">
-            <!-- Publication 1 -->
-            <div
-              class="bg-gray-800/70 backdrop-blur-sm p-5 rounded-xl shadow-md hover:shadow-blue-400/30 transition"
-            >
-              <h3 class="text-lg text-white font-semibold mb-1">
-                <a
-                  href="https://doi.org/10.1109/ACCESS.2025.3555934"
-                  target="_blank"
-                  class="hover:underline"
-                >
-                  Deep Fusion of Neurophysiological and Facial Features for
-                  Enhanced Emotion Detection
-                </a>
-              </h3>
-              <p class="text-gray-300 text-sm mb-1">
-                Dev Parikh, Farshad Safavi, Vikas Reddy Venkannagari, Ramana
-                Kumar Vinjamuri
-              </p>
-              <p class="text-gray-400 text-xs">IEEE Access, 2025</p>
-              <p class="text-gray-400 text-xs italic mt-2">
-                Proposed a novel Transformer-based architecture that fuses EEG
-                and facial emotion features, achieving near state-of-the-art
-                accuracy.
-              </p>
-            </div>
+          <div class="publications-container space-y-6">
+            <!-- Publications loaded dynamically from content.json -->
           </div>
         </div>
       </section>
-
-      <!-- <section class="py-24 px-6 bg-[#1c1c1f] text-white">
-        <h2 class="text-4xl font-bold text-center mb-12">🧪 Projects</h2>
-        <div class="max-w-5xl mx-auto space-y-8 text-sm text-zinc-300">
-          <div>
-            <h4 class="text-lg font-semibold text-white">
-              Soccer Player Valuation Model
-            </h4>
-            <p>
-              <a
-                href="https://github.com/devparikh0506/soccer_master"
-                target="_blank"
-                class="text-blue-400 hover:text-blue-300"
-                >GitHub Repo</a
-              >
-            </p>
-            <ul class="list-disc list-inside mt-2">
-              <li>
-                Predicted soccer player transfer values, reducing forecast error
-                by 37.4% (R-squared improvement).
-              </li>
-              <li>
-                Built Feedforward Neural Network optimized by SGD, achieving
-                99.95% accuracy and 15% reduction in training time.
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-lg font-semibold text-white">
-              Unmanned Aircraft System Risk Analysis
-            </h4>
-            <p>
-              <a
-                href="https://github.com/devparikh0506/uas_risk_analysis"
-                target="_blank"
-                class="text-blue-400 hover:text-blue-300"
-                >GitHub Repo</a
-              >
-            </p>
-            <ul class="list-disc list-inside mt-2">
-              <li>
-                Analyzed 100+ GB of UAS and FAA data using PySpark & AWS Glue,
-                identifying high-risk zones with 95% accuracy.
-              </li>
-              <li>
-                Utilized Hadoop and shapefiles to visualize geospatial risk
-                patterns with 90% confidence level.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-24 px-6 bg-[#111113] text-white">
-        <h2 class="text-4xl font-bold text-center mb-12">📄 Publications</h2>
-        <div class="max-w-5xl mx-auto">
-          <div class="bg-white/5 border border-zinc-700 rounded-2xl p-6">
-            <h4 class="text-lg font-semibold mb-2">
-              Deep Fusion of Neurophysiological and Facial Features for Enhanced
-              Emotion Detection
-            </h4>
-            <p class="text-sm text-zinc-300 mb-2">
-              F. Safavi, V. R. Venkannagari, D. Parikh, and R. K. Vinjamuri,
-              IEEE Access, 2025.
-              <a
-                href="https://doi.org/10.1109/ACCESS.2025.3555934"
-                target="_blank"
-                class="text-blue-400 hover:text-blue-300"
-                >DOI: 10.1109/ACCESS.2025.3555934</a
-              >
-            </p>
-            <ul class="list-disc list-inside text-sm text-zinc-300">
-              <li>
-                Developed a multimodal transformer integrating EEG and facial
-                data, achieving near state-of-the-art accuracy.
-              </li>
-              <li>
-                Research supported by NSF CAREER Award HCC-2053498 in affective
-                computing.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section> -->
 
       <style>
         ul li::marker {
