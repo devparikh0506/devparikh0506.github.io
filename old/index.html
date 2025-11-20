@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Parikh | Software & AI/ML Engineer</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta
+      name="description"
+      content="Welcome to Dev Parikh's portfolio. Discover work in AI, Brain-Computer Interfaces, and Full-Stack Development."
+    />
+    <meta
+      property="og:title"
+      content="Dev Parikh | Software & AI/ML Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Explore cutting-edge projects and research in AI, BCI, and software engineering by Dev Parikh."
+    />
+    <meta property="og:url" content="https://devparikh0506.github.io/" />
+    <meta
+      property="og:image"
+      content="https://devparikh.vercel.app/og?title=Dev%20Parikh%27s%20Portfolio"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link href="./styles.css" rel="stylesheet" />
+    <script src="scripts/main.js" defer></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      /* General Page Styling */
+      body {
+        background-color: #18181b;
+        color: #d4d4d8;
+        font-family: "Inter", sans-serif;
+      }
+
+      a {
+        transition: all 0.3s ease;
+      }
+
+      a:hover {
+        transform: scale(1.05);
+      }
+
+      /* Custom Button Styling */
+      .btn-custom {
+        border-radius: 0.75rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .btn-custom:hover {
+        transform: translateY(-2px) scale(1.05);
+        filter: brightness(1.1);
+      }
+
+      /* Navigation Underline Animation */
+      a.nav-link::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 3px;
+        background-color: #60a5fa;
+        transition: width 0.5s ease-in-out;
+      }
+
+      a.nav-link:hover::after {
+        width: 100%;
+      }
+
+      a.nav-link.active::after {
+        width: 100%;
+      }
+
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    </style>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          once: true,
+          duration: 800,
+          easing: "ease-in-out",
+        });
+      });
+    </script>
+  </head>
+
+  <body class="min-h-screen flex flex-col justify-between">
+    <div id="particles-js"></div>
+    <header
+      class="sticky z-50 top-0 shadow-md backdrop-blur-md text-zinc-300 py-4 px-10 flex flex-wrap items-center justify-between"
+    >
+      <div class="flex items-center space-x-4">
+        <div class="flex flex-col items-start">
+          <h1 class="text-2xl md:text-3xl font-bold tracking-wide text-white">
+            <a href="/"> DEV PARIKH </a>
+          </h1>
+          <div class="w-8 h-1 mt-1 bg-blue-400 rounded-full"></div>
+        </div>
+      </div>
+      <!-- Hamburger (Mobile Only) -->
+      <button
+        id="menu-btn"
+        class="md:hidden text-zinc-300 text-3xl focus:outline-none"
+      >
+        &#9776;
+      </button>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex gap-6 text-base font-medium items-center">
+        <a
+          href="/"
+          class="nav-link text-blue-400 font-semibold hover:text-blue-400 active"
+          >Home</a
+        >
+        <a href="about" class="nav-link text-zinc-300 hover:text-blue-400">About</a>
+        <a href="projects" class="nav-link text-zinc-300 hover:text-blue-400"
+          >Projects</a
+        >
+        <a href="contact" class="nav-link text-zinc-300 hover:text-blue-400"
+          >Contact</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1FJ8Uu4NPTxvwX5I_-b2nZ-yh5RJevJ_o/view"
+          target="_blank"
+          class="px-3 py-1.5 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium rounded-md transition flex items-center gap-1.5"
+        >
+          <i class="fas fa-file-alt"></i>
+          <span>Resume</span>
+        </a>
+      </nav>
+    </header>
+    <!-- SIDEBAR + OVERLAY (Place outside <header>) -->
+    <!-- Sidebar Overlay -->
+<div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+
+<!-- Sidebar -->
+<div
+  id="sidebar"
+  class="fixed top-0 left-0 w-64 h-full bg-zinc-900 z-50 p-6 transform -translate-x-full transition-transform duration-300 md:hidden flex flex-col"
+>
+  <!-- Back Button -->
+  <div class="flex items-center justify-between mb-6">
+    <div class="flex items-center space-x-4">
+        <div class="flex flex-col items-start">
+          <h1 class="text-2xl md:text-3xl font-bold tracking-wide text-white">
+            <a href="/">DEV PARIKH</a>
+          </h1>
+          <div class="w-8 h-1 mt-1 bg-blue-400 rounded-full"></div>
+        </div>
+      </div>
+    <button
+      id="close-sidebar"
+      class="text-zinc-400 text-2xl font-bold hover:text-blue-400 focus:outline-none"
+    >
+      &times;
+    </button>
+  </div>
+
+  <!-- Nav Links -->
+  <nav class="mt-6 flex flex-col gap-6 text-lg font-medium">
+    <a href="/" class="text-blue-400 hover:text-blue-400 active">Home</a>
+    <a href="about" class="text-zinc-300 hover:text-blue-400">About</a>
+    <a href="projects" class="text-zinc-300 hover:text-blue-400">Projects</a>
+    <a href="contact" class="text-zinc-300 hover:text-blue-400">Contact</a>
+    <a
+      href="https://drive.google.com/file/d/1FJ8Uu4NPTxvwX5I_-b2nZ-yh5RJevJ_o/view"
+      target="_blank"
+      class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-center font-medium rounded-md transition flex items-center justify-center gap-2"
+    >
+      <i class="fas fa-file-alt"></i>
+      <span>Resume</span>
+    </a>
+  </nav>
+</div>
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <section
+        class="flex flex-col items-center justify-center px-6 py-12 md:py-16 min-h-[calc(100vh-120px)] text-center relative z-10"
+      >
+        <!-- Profile Image -->
+        <img
+          src="assets/avatar.png"
+          alt="Dev Parikh Avatar"
+          class="hero-avatar w-32 h-32 md:w-40 md:h-40 rounded-full ring-4 ring-blue-400 mb-6 shadow-lg transition-transform hover:scale-105"
+        />
+
+        <!-- Hero Text -->
+        <h2 class="hero-name text-4xl md:text-5xl font-bold text-white mb-2">
+          Hi, I'm <span class="text-blue-400">Dev Parikh</span>
+        </h2>
+
+        <!-- Typed Output -->
+        <h3 class="text-xl md:text-2xl font-medium text-zinc-300 mb-4">
+          <span id="typed-output" class="inline-block"></span>
+        </h3>
+
+        <!-- Bio -->
+        <p class="hero-bio max-w-3xl text-base md:text-lg text-zinc-400 mb-8 leading-relaxed px-4">
+          <!-- Bio loaded dynamically from content.json -->
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <a
+            href="https://github.com/devparikh0506"
+            target="_blank"
+            class="btn-custom px-6 py-3 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold"
+          >
+            <i class="fab fa-github mr-2"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/devparikh0506"
+            target="_blank"
+            class="btn-custom px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold"
+          >
+            <i class="fab fa-linkedin mr-2"></i> LinkedIn
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1FJ8Uu4NPTxvwX5I_-b2nZ-yh5RJevJ_o/view"
+            target="_blank"
+            class="btn-custom px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold"
+          >
+            <i class="fas fa-file-alt mr-2"></i> View Resume
+          </a>
+        </div>
+      </section>
+
+      <!-- Skills section -->
+      <section class="py-24 px-6 text-white">
+        <h2 class="text-4xl font-bold text-center mb-16">⚙️ Core Expertise</h2>
+
+        <div
+          class="core-expertise-grid max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+        >
+          <!-- Core Expertise loaded dynamically from content.json -->
+        </div>
+      </section>
+
+      <!-- Featured Projects -->
+      <section class="py-24 px-6 text-white">
+        <h2 class="text-4xl font-bold text-center mb-16">
+          🚀 Featured Projects
+        </h2>
+
+        <!-- Swiper Container -->
+        <div
+          class="swiper-container max-w-7xl mx-auto overflow-hidden px-2"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="swiper-wrapper">
+            <!-- Featured projects loaded dynamically from content.json -->
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <a
+            href="projects"
+            class="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded-xl text-white bg-gradient-to-r from-blue-500 to-indigo-500 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/60 hover:-translate-y-1 transition-all duration-300"
+          >
+            <i class="fas fa-folder-open text-white"></i>
+            View All Projects
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="relative  bg-blue-500/25 backdrop-blur-xl text-zinc-400 py-10 px-6"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left"
+      >
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-2">Contact Info</h3>
+          <div class="w-12 h-0.5 bg-zinc-500 mx-auto md:mx-0 mb-4"></div>
+          <ul class="space-y-2">
+            <li>
+              <span class="inline-block w-6">📧</span>
+              <a href="mailto:dev.dpparikh@gmail.com" class="hover:text-blue-400"
+                >dev.dpparikh@gmail.com</a
+              >
+            </li>
+            <li>
+              <span class="inline-block w-6">📞</span>
+              <a href="tel:+16674339710" class="hover:text-blue-400"
+                >667-433-9710</a
+              >
+            </li>
+            <li><span class="inline-block w-6">📍</span> United States</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-2">Quick Links</h3>
+          <div class="w-12 h-0.5 bg-zinc-500 mx-auto md:mx-0 mb-4"></div>
+          <ul class="space-y-2">
+            <li><a href="/" class="hover:text-blue-400">Home</a></li>
+            <li>
+              <a href="about" class="hover:text-blue-400">About</a>
+            </li>
+            <li>
+              <a href="projects" class="hover:text-blue-400">Projects</a>
+            </li>
+            <li>
+              <a href="contact" class="hover:text-blue-400">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-2">Download Resume</h3>
+          <div class="w-12 h-0.5 bg-zinc-500 mx-auto md:mx-0 mb-4"></div>
+          <p class="mb-4">
+            Get a copy of my detailed resume to learn more about my experience
+            in AI/ML, data science, and robotics.
+          </p>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1FJ8Uu4NPTxvwX5I_-b2nZ-yh5RJevJ_o"
+            download
+            class="bg-zinc-500 hover:bg-blue-400 text-white font-semibold py-2 px-6 rounded-lg inline-block"
+            >⬇️ Download PDF</a
+          >
+        </div>
+      </div>
+
+      <div class="text-center text-sm text-zinc-500 mt-10">
+        © 2025 Dev Parikh. All rights reserved.
+    </footer>
+
+    <script src="scripts/vendor/typed.min.js"></script>
+    <script src="scripts/vendor/particles.min.js"></script>
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>
